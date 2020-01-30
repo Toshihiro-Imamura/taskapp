@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		74128BB923CE1B28006AA348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74128BB823CE1B28006AA348 /* Assets.xcassets */; };
 		74128BBC23CE1B28006AA348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74128BBA23CE1B28006AA348 /* LaunchScreen.storyboard */; };
 		74128BC623CEAA16006AA348 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74128BC523CEAA16006AA348 /* InputViewController.swift */; };
+		74128BC823CEB353006AA348 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74128BC723CEB353006AA348 /* Task.swift */; };
+		74128BCA23D3EE1E006AA348 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74128BC923D3EE1E006AA348 /* Category.swift */; };
+		74128BCC23D3F069006AA348 /* categoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74128BCB23D3F069006AA348 /* categoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		74128BBB23CE1B28006AA348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74128BBD23CE1B28006AA348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74128BC523CEAA16006AA348 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		74128BC723CEB353006AA348 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		74128BC923D3EE1E006AA348 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		74128BCB23D3F069006AA348 /* categoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryViewController.swift; sourceTree = "<group>"; };
 		7E95A7502902D779C5FB8214 /* Pods-taskapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.release.xcconfig"; path = "Target Support Files/Pods-taskapp/Pods-taskapp.release.xcconfig"; sourceTree = "<group>"; };
 		88ED84C8D781F47A5314AE89 /* Pods-taskapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.debug.xcconfig"; path = "Target Support Files/Pods-taskapp/Pods-taskapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,7 +56,6 @@
 				88ED84C8D781F47A5314AE89 /* Pods-taskapp.debug.xcconfig */,
 				7E95A7502902D779C5FB8214 /* Pods-taskapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,10 +84,13 @@
 				74128BB123CE1B14006AA348 /* SceneDelegate.swift */,
 				74128BB323CE1B14006AA348 /* ViewController.swift */,
 				74128BC523CEAA16006AA348 /* InputViewController.swift */,
+				74128BCB23D3F069006AA348 /* categoryViewController.swift */,
 				74128BB523CE1B14006AA348 /* Main.storyboard */,
 				74128BB823CE1B28006AA348 /* Assets.xcassets */,
 				74128BBA23CE1B28006AA348 /* LaunchScreen.storyboard */,
 				74128BBD23CE1B28006AA348 /* Info.plist */,
+				74128BC723CEB353006AA348 /* Task.swift */,
+				74128BC923D3EE1E006AA348 /* Category.swift */,
 			);
 			path = taskapp;
 			sourceTree = "<group>";
@@ -212,8 +220,11 @@
 			files = (
 				74128BB423CE1B14006AA348 /* ViewController.swift in Sources */,
 				74128BB023CE1B14006AA348 /* AppDelegate.swift in Sources */,
+				74128BC823CEB353006AA348 /* Task.swift in Sources */,
 				74128BB223CE1B14006AA348 /* SceneDelegate.swift in Sources */,
 				74128BC623CEAA16006AA348 /* InputViewController.swift in Sources */,
+				74128BCA23D3EE1E006AA348 /* Category.swift in Sources */,
+				74128BCC23D3F069006AA348 /* categoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
