@@ -74,7 +74,7 @@ class InputViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     func pickerView(_ pickerView: UIPickerView,
                     didSelectRow row: Int,
                     inComponent component: Int) {
-        if self.categoryArray[row-1].categoryname == "カテゴリなし"{
+        if row == 0{
             self.categoryTextField.text = " "
         }else{
             self.categoryTextField.text = "\(self.categoryArray[row-1].categoryname)"
@@ -91,6 +91,7 @@ class InputViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             self.task.category = self.categoryTextField.text!
             self.realm.add(self.task, update: .modified)
         }
+        self.navigationController?.popViewController(animated: true)
     }
     
     

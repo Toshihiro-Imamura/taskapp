@@ -50,8 +50,7 @@ class categoryViewController: UIViewController {
                 }
             }
         }
-        print(category.categoryname)
-        print(categoryArray.count)
+        
         super.viewWillDisappear(animated)
     }
     
