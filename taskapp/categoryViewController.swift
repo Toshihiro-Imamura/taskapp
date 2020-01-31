@@ -62,9 +62,10 @@ class categoryViewController: UIViewController {
         try! Realm().write {
             self.category.categoryname = self.newCategoryTextField.text!
             self.realm.add(self.category, update: .modified)
-            
         }
+        self.navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func cancelButton(_ sender: Any) {
         self.newCategoryTextField.text = ""
         

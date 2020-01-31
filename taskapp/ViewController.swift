@@ -93,7 +93,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func pickerView(_ pickerView: UIPickerView,
                     didSelectRow row: Int,
                     inComponent component: Int) {
-        if self.categoryArray[row-1].categoryname == "カテゴリなし"{
+        if row == 0 {
             self.searchBar.text = " "
         }else{
             self.searchBar.text = "\(self.categoryArray[row-1].categoryname)"
